@@ -7,5 +7,4 @@ Your Surame: <input type="text" name="user2" />
 </form>
 
 <br>
-
-<a href="index.php">MAIN MENU</a>
+<a href="/index.php">MAIN MENU</a>
