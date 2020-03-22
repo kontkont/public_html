@@ -65,11 +65,6 @@
     <br>
     <a href="5.php">Страница 5</a>
     <br>
-    <details>
-        <summary>Нажми на треугольничек</summary>
-        <p>Хуй саси</p>
-    </details>
-    <br>
 </div>
 
 </body>
