@@ -1,35 +1,23 @@
 <html>
 <head>
     <style>
+
         body {
-            background: url(image/background.jpg);
-            background-size: 100%;
-            margin-top: 300px;
-            margin-right: 100px;
-            margin-left: 100px;
-        }
-
-        hr.block1 {
-            border-bottom: 20px dashed black;
-        }
-
-        hr.block2 {
-            border-bottom: 20px dashed black;
+            background: url(images/background.jpg);
+            background-size: cover;
+            margin-top: 75px;
+            margin-right: 343px;
+            margin-left: 0px;
         }
 
         .block1 {
-            float: left;
-            text-align: center;
-            width: 583px;
-            background: lightgray;
-            color: black;
-        }
-
-        .block2 {
             float: right;
-            text-align: center;
-            width: 583px;
-            background: lightgray;
+            text-align: left;
+            width: 300px;
+            border: 3px solid black;
+            background: #f6d379;
+            padding: 20px;
+            border-radius: 10px;
             color: black;
         }
 
@@ -38,27 +26,6 @@
 <body>
 
 <div class="block1">
-    <hr class="block2">
-    <p>Гитхаб данной хуйни <a href="https://github.com/kontkont/public_html"
-                              target="_blank">github.com/kontkont/public_html</a></p>
-    <br>
-    <a href="1post.php">Упражнение - представься щенок</a>
-    <br>
-    <a href="3load/3load.php">Пример 7.16 из Никсона, загрузка файла</a>
-    <br>
-    <a href="3load/4file.php">Чекаем загруженные файлы в /3load</a>
-    <br>
-    <a href="5.php">Страница 5</a>
-    <br>
-    <details>
-        <summary>Нажми на треугольничек</summary>
-        <p>Хуй саси</p>
-    </details>
-    <br>
-</div>
-
-<div class="block2">
-    <hr class="block2">
     <p>Гитхаб данной хуйни <a href="https://github.com/kontkont/public_html"
                               target="_blank">github.com/kontkont/public_html</a></p>
     <br>

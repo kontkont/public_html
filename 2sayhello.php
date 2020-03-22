@@ -1,5 +1,15 @@
 <?php
-print "Hello, {$_POST['user1']} {$_POST['user2']} !";
+
+$a = $_POST['user1'];
+$b = $_POST['user2'];
+
+function SayHallo($name, $surname)
+{
+    print "Hello, $name $surname !";
+}
+
+SayHallo($a, $b);
+SayHallo($a, $b);
 ?>
 
 <br>
