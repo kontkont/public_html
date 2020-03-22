@@ -5,20 +5,48 @@
         body {
             background: url(images/background.jpg);
             background-size: cover;
-            margin-top: 75px;
-            margin-right: 343px;
-            margin-left: 0px;
+            margin-top: 5%;
+            margin-left: 12%;
+            margin-right: 10%;
+
         }
 
         .block1 {
+            /* Выравнивание блока по стороне */
             float: right;
+            /* Выравнивание текста по стороне */
             text-align: left;
-            width: 300px;
-            border: 3px solid black;
-            background: #f6d379;
+            /* Ширина блока */
+            width: 100%;
+            /* Высота блока */
+            height: 100%;
+            /* Граница: ширина тип цвет */
+            border: 3px solid white;
+            /* Цвет фона и его прозрачность*/
+            background-color: rgba(0, 0, 0, 0.3);
+            /* Отступы текста от краев блока */
             padding: 20px;
+            /* Закругление углов */
             border-radius: 10px;
-            color: black;
+            /* Шрифт текста */
+            font-family: Impact;
+            /* Размер текста */
+            font-size: 20pt;
+            /* Цвет текста */
+            color: white;
+        }
+
+        /* Цвет ссылок */
+        a {
+            color: white;
+        }
+        /* Цвет посещенных ссылок */
+        a:visited {
+            color: white;
+        }
+        /* Цвет активных ссылок */
+        a:active {
+            color: white;
         }
 
     </style>

@@ -8,6 +8,8 @@
     <input type='file' name='filename' size='10'>
     <input type='submit' value='Upload'></form>
 
+<a href="4file.php">Чекаем загруженные файлы в /3load</a>
+<br>
 <a href="/index.php">MAIN MENU</a>
 <br>
 
@@ -37,13 +39,10 @@ if ($_FILES) {
         $n = "image.$ext";
         move_uploaded_file($_FILES['filename']['tmp_name'], $n);
         echo "Загружен файл '$name'':<br>";
-        echo "<img src='$n'>";
+        echo "<details><summary>Фото под спойлером</summary> <img src='$n'> </details>";
     } else echo "'$name' файл не в том формате";
-} else echo "ничего не загружено";
+} else echo "Ничего не загружено";
 ?>
-
-<br>
-<a href="/3load/4file.php">Чекаем загруженные файлы в /3load</a>
 
 </body>
 </html>

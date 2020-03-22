@@ -1,15 +1,14 @@
 <?php
 
-$a = $_POST['user1'];
-$b = $_POST['user2'];
+$name = $_POST['user1'];
+$surname = $_POST['user2'];
 
-function SayHallo($name, $surname)
+function SayHallo($a, $b)
 {
-    print "Hello, $name $surname !";
+    print "Hello, $a $b !";
 }
 
-SayHallo($a, $b);
-SayHallo($a, $b);
+SayHallo($name, $surname);
 ?>
 
 <br>
