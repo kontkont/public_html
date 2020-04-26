@@ -10,6 +10,10 @@
 </head>
 <div class="blockMain">
 
+<div class="blockTop">
+    <?php echo date('r') ?>
+</div>
+
 <div class="blockLeft">
     <p>Гитхаб данной хуйни <a href="https://github.com/kontkont/public_html"
                               target="_blank">github.com/kontkont/public_html</a></p>

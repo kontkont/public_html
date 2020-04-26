@@ -3,8 +3,7 @@
     <br>
     Your Surame: <input type="text" name="user2"/>
     <br>
-    <button type="submit"
-    ">Say Hello</button>
+    <button type="submit">Say Hello</button>
 </form>
 
 <br>

@@ -1,15 +1,25 @@
 
 <?php
 
-if (isset($_POST['username'])) {
-    echo 'Привет ' . $_POST['username'] . '!';
+if (!empty($_POST['name']) and !empty($_POST['surname'])) {
+    echo 'Привет ' . $_POST['surname'] . ' ' . $_POST['name'] . '!';
+    echo '<form method="post" action="">
+              <input type="text" name="name">
+              <input type="text" name="surname">
+              <button type="submit">Все поменять</button>
+         </form>';
     exit;
 }
 
 ?>
 
-<p>Введите свое имя </p>
-<form action="" method="post">
-    <input type="text" name="username">
-    <input type="submit">
+<form method="post" action="">
+    <p>Введите имя:</p>
+    <input type="text" name="name">
+
+    <p>Введите фамилию:</p>
+    <input type="text" name="surname">
+
+    <br>
+    <button type="submit">Отправить данные</button>
 </form>
