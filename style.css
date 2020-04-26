@@ -1,0 +1,65 @@
+
+
+body {
+    background: url(images/background.jpg);
+    background-size: cover;
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+.block1 {
+    /* Выравнивание блока по стороне */
+    float: left;
+    /* Выравнивание текста по стороне */
+    text-align: left;
+    /* Ширина блока */
+    width: 70%;
+    /* Высота блока */
+    height: 100%;
+    /* Граница: ширина тип цвет */
+    border: 3px solid white;
+    /* Цвет фона и его прозрачность*/
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Отступы текста от краев блока */
+    padding: 20px;
+    /* Заставляет строки и слова автоматически переноситься что бы влезть в блок */
+    word-wrap: break-word;
+    /* Закругление углов */
+    border-radius: 10px;
+    /* Шрифт текста */
+    font-family: Impact;
+    /* Размер текста */
+    font-size: 20pt;
+    /* Цвет текста */
+    color: white;
+}
+
+.block2 {
+    float: right;
+    text-align: left;
+    width: 20%;
+    height: 100%;
+    border: 3px solid white;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    word-wrap: break-word;
+    border-radius: 10px;
+    font-family: Impact;
+    font-size: 15pt;
+    color: white;
+}
+
+/* Цвет ссылок */
+.block1 a {
+    color: white;
+}
+/* Цвет посещенных ссылок */
+.block1 a:visited {
+    color: white;
+}
+/* Цвет активных ссылок */
+.block1 a:active {
+    color: white;
+}
