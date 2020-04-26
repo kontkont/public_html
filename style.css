@@ -3,15 +3,25 @@
 body {
     background: url(images/background.jpg);
     background-size: cover;
-    margin-top: 5%;
-    margin-left: 10%;
-    margin-right: 10%;
-
 }
 
-.block1 {
+.blockMain {
+    float: left;
+    margin: 0;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
+    word-wrap: break-word;
+    font-family: Impact;
+    font-size: 15pt;
+    color: white;
+}
+
+.blockLeft {
     /* Выравнивание блока по стороне */
     float: left;
+    margin-bottom: 10px;
     /* Выравнивание текста по стороне */
     text-align: left;
     /* Ширина блока */
@@ -36,10 +46,11 @@ body {
     color: white;
 }
 
-.block2 {
+.blockRight {
     float: right;
+    margin-bottom: 10px;
     text-align: left;
-    width: 20%;
+    width: 22%;
     height: 100%;
     border: 3px solid white;
     background-color: rgba(0, 0, 0, 0.3);
@@ -52,14 +63,14 @@ body {
 }
 
 /* Цвет ссылок */
-.block1 a {
+.blockMain a {
     color: white;
 }
 /* Цвет посещенных ссылок */
-.block1 a:visited {
+.blockMain a:visited {
     color: white;
 }
 /* Цвет активных ссылок */
-.block1 a:active {
+.blockMain a:active {
     color: white;
 }

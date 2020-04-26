@@ -8,8 +8,9 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
 
 </head>
+<div class="blockMain">
 
-<div class="block1">
+<div class="blockLeft">
     <p>Гитхаб данной хуйни <a href="https://github.com/kontkont/public_html"
                               target="_blank">github.com/kontkont/public_html</a></p>
     <p>Гитхаб Тихона <a href="https://github.com/Syseka"
@@ -29,18 +30,19 @@
 
 </div>
 
-<div class="block2">
+<div class="blockRight">
 
 <?php include("portfolio.php"); ?>
 
 </div>
 
-<div class="block1">
+<div class="blockLeft">
 
     <?php include("5post.php"); ?>
 
 </div>
 
+</div>
 </body>
 </html>
 
