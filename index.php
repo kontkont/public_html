@@ -11,7 +11,7 @@
 <div class="blockMain">
 
 <div class="blockTop">
-    <?php echo date('r') ?>
+    <?php include("6clock.php"); ?>
 </div>
 
 <div class="blockLeft">
@@ -36,7 +36,7 @@
 
 <div class="blockRight">
 
-<?php include("portfolio.php"); ?>
+    <?php include("portfolio.php"); ?>
 
 </div>
 
