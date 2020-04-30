@@ -1,6 +1,11 @@
 <?php
 
-class InstructionObject1
+interface iInterface
+{
+    public function someFunction();
+}
+
+class InstructionObject1 implements iInterface
 {
     public $properties1;
     public $properties2;
