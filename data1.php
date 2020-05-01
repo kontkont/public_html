@@ -10,5 +10,4 @@ return [
     ],
     'interest' => ['shabit', 'masturbation'],
     'works' => ['pomoika', 'posudomoika'],
-
 ];

@@ -10,11 +10,11 @@
 </head>
 <div class="blockMain">
 
-    <div class="blockTop">
+   <div class="blockTop">
     <?php include("6clock.php"); ?>
 </div>
 
-    <div class="blockLeft">
+   <div class="blockLeft">
         <p>Гитхаб данной хуйни <a href="https://github.com/kontkont/public_html"
                               target="_blank">github.com/kontkont/public_html</a></p>
         <p>Гитхаб Тихона <a href="https://github.com/Syseka"
@@ -22,16 +22,11 @@
         <br> Сайт Тихона <a href="https://jodd5344.000webhostapp.com"
                         target="_blank">jodd5344.000webhostapp.com </a> </p>
 
-    </div>
+           </div>
 
     <div class="blockRight">
 
         <?php include("portfolio.php"); ?>
-
-    </div>
-
-    <div class="blockLeft">
-        <?php include("5post.php"); ?>
 
     </div>
 
@@ -41,6 +36,11 @@
         <a href="3load/4file.php">Чекаем загруженные файлы в /3load</a>
         <br>
     </div>
+
+    <div class="blockLeft">
+        <?php include("5post.php"); ?>
+
+        </div>
 
 </div>
 </body>
