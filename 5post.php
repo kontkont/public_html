@@ -5,8 +5,8 @@ if (!empty($_POST['name']) and !empty($_POST['surname']))
 {
     echo 'Привет ' . $_POST['surname'] . ' ' . $_POST['name'] . '!';
     echo '<form method="post" action="">
-            <input type="text" name="name">
-            <input type="text" name="surname">
+              <input type="text" name="name">
+              <input type="text" name="surname">
               <button type="submit">Все поменять</button>
           </form>';
     exit;

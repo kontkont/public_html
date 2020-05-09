@@ -42,3 +42,21 @@ class InstructionObject2 extends InstructionObject1
 
 $object2=new InstructionObject2('properties1', 'properties2', 'properties3','properties4');
 $object2->someFunction();
+
+trait someFunctionTrait
+{
+    public function someFunction()
+    {
+        //function
+    }
+}
+
+class InstructionObject3
+{
+    use someFunctionTrait;
+}
+
+$object3=new InstructionObject3 ();
+
+
+
