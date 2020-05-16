@@ -1,13 +1,15 @@
 
 <?php
-    $data = include ('data1.php');
+
+ /*   $data = include ('data1.php');
     $dataAbout = $data['about'];
     $dataInterest = $data['interest'];
     $dataWorks = $data['works'];
+
     ?>
 
-<h3>Имя:</h3><p><?php echo $data['about']['name']; ?></p>
-<h3>Должность:</h3><p><?php echo $data['about']['post']; ?></p>
+<h3>Имя:</h3><p><?php echo $dataAbout['name']; ?></p>
+<h3>Должность:</h3><p><?php echo $dataAbout['post']; ?></p>
 <h3>Почта:</h3><p><?php echo $dataAbout['email']; ?></p>
 <h3>Телефон:</h3><p><?php echo $dataAbout['phone']; ?></p>
 <h3>Сайт:</h3><p><?php echo $dataAbout['site']; ?></p>
