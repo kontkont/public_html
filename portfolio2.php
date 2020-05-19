@@ -17,7 +17,7 @@ $dataWorks = $dataWorks->fetchAll();
 
 ?>
 
-<details> <summary>Общие данные</summary>
+<h3>Общие данные:</h3>
 <p>Имя: <?php echo $dataAbout['name']; ?></p>
 <p>Должность: <?php echo $dataAbout['post']; ?></p>
 <p>Почта: <?php echo $dataAbout['email']; ?></p>
@@ -25,7 +25,8 @@ $dataWorks = $dataWorks->fetchAll();
 <p>Сайт: <?php echo $dataAbout['site']; ?></p>
 </details>
 
-<details> <summary>Образование</summary>
+<details>
+<h3>Образование:</h3>
 <?php foreach ($dataEducation as $eduKey => $edu)
     {
         echo $edu['faculty'] .' '.
@@ -33,18 +34,17 @@ $dataWorks = $dataWorks->fetchAll();
              $edu['yearStart'] .' '.
              $edu['yearEnd'] . '<br>';
     } ?>
-</details>
 
-<details> <summary>Интересы</summary>
+<h3>Интересы:</h3>
 <?php foreach ($dataInterest as $int)
     {
         echo $int['title'] . ', ' ;
     } ?>
-</details>
 
-<details> <summary>Места работы</summary>
+<h3>Места работы:</h3>
 <?php foreach ($dataWorks as $work)
     {
         echo $work['title'] . ', ';
     } ?>
 </details>
+
