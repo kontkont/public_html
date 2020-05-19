@@ -1,7 +1,7 @@
 
 <?php
 
- /*   $data = include ('data1.php');
+    $data = include ('data1.php');
     $dataAbout = $data['about'];
     $dataInterest = $data['interest'];
     $dataWorks = $data['works'];

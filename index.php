@@ -26,7 +26,7 @@
 
     <div class="blockRight">
 
-        <?php include("portfolio.php"); ?>
+        <?php include("portfolio2.php"); ?>
 
     </div>
 
@@ -39,8 +39,15 @@
 
     <div class="blockLeft">
         <?php include("5post.php"); ?>
+    </div>
 
-        </div>
+    <div class="blockLeft">
+        <?php include("13comments.php"); ?>
+    </div>
+
+    <div class="blockRight">
+        <?php include("14comments_form.php"); ?>
+    </div>
 
 </div>
 </body>

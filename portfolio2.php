@@ -7,36 +7,44 @@ $dataAbout = $connection->query("SELECT * FROM about");
 $dataAbout = $dataAbout->fetch();
 
 $dataEducation = $connection->query("SELECT * FROM education");
-$dataEducation = $dataEducation->fetch();
+$dataEducation = $dataEducation->fetchAll();
 
 $dataInterest = $connection->query("SELECT * FROM interest");
-$dataInterest = $dataInterest->fetch();
+$dataInterest = $dataInterest->fetchAll();
 
 $dataWorks = $connection->query("SELECT * FROM work");
-$dataWorks = $dataWorks->fetch();
+$dataWorks = $dataWorks->fetchAll();
 
 ?>
 
-<h3>Имя:</h3><p><?php echo $dataAbout['name']; ?></p>
-<h3>Должность:</h3><p><?php echo $dataAbout['post']; ?></p>
-<h3>Почта:</h3><p><?php echo $dataAbout['email']; ?></p>
-<h3>Телефон:</h3><p><?php echo $dataAbout['phone']; ?></p>
-<h3>Сайт:</h3><p><?php echo $dataAbout['site']; ?></p>
+<details> <summary>Общие данные</summary>
+<p>Имя: <?php echo $dataAbout['name']; ?></p>
+<p>Должность: <?php echo $dataAbout['post']; ?></p>
+<p>Почта: <?php echo $dataAbout['email']; ?></p>
+<p>Телефон: <?php echo $dataAbout['phone']; ?></p>
+<p>Сайт: <?php echo $dataAbout['site']; ?></p>
+</details>
 
-<h3>Образование:</h3>
-<?php foreach ($dataEducation as $edu)
+<details> <summary>Образование</summary>
+<?php foreach ($dataEducation as $eduKey => $edu)
     {
-        echo $edu['faculty'] . $edu['univercity'] . $edu['yeatStart'] . $edu['yearEnd'] . '<br>';
+        echo $edu['faculty'] .' '.
+             $edu['univercity'] .' '.
+             $edu['yearStart'] .' '.
+             $edu['yearEnd'] . '<br>';
     } ?>
+</details>
 
-<h3>Увлечения:</h3>
+<details> <summary>Интересы</summary>
 <?php foreach ($dataInterest as $int)
     {
         echo $int['title'] . ', ' ;
     } ?>
+</details>
 
-<h3>Места работы:</h3>
+<details> <summary>Места работы</summary>
 <?php foreach ($dataWorks as $work)
     {
         echo $work['title'] . ', ';
     } ?>
+</details>
