@@ -1,10 +1,12 @@
 <?php
-$connection = new PDO ('mysql:host=localhost; dbname=a0263496_lesson1; charser=utf8',
-    'a0263496_lesson1', '123');
+include("connection.php");
+$connection = new PDO("$bdInfo", "$bdUser", "$bdPass");
 
 if ($_POST['comment']) {
-    $newComment=$_POST['comment'];
-    $connection->query("INSERT INTO comments (comment) VALUE ('$newComment')");
+
+    //Вот тут отключил запись комментариев
+    //$newComment=$_POST['comment'];
+    //$connection->query("INSERT INTO comments (comment) VALUE ('$newComment')");
 
     $allComments = $connection->query("SELECT * FROM comments");
     $allComments = $allComments->fetchAll();
@@ -18,6 +20,7 @@ if ($_POST['comment']) {
     $allComments = $connection->query("SELECT * FROM comments");
     $allComments = $allComments->fetchAll();
     $allComments = array_reverse ($allComments);
+
     foreach ($allComments as $com)
     {
         echo '<div class="blockLeft">' . $com['comment'] . '</div>';

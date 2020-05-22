@@ -3,7 +3,7 @@
 <head>
 
     <meta charset='UTF-8'>
-    <title>University of Oxford</title>
+    <title>test1project</title>
     <link rel="shortcut icon" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="style.css" />
 
@@ -15,8 +15,14 @@
 </div>
 
    <div class="blockLeft">
-        <p>Гитхаб данной хуйни <a href="https://github.com/kontkont/public_html"
+        <p>Гитхаб данного сайта <a href="https://github.com/kontkont/public_html"
                               target="_blank">github.com/kontkont/public_html</a></p>
+
+       <p>Проект "stena" <a href="http://test1project.pzdk.ru/stena/"
+                           target="_blank">test1project.pzdk.ru/stena/</a>
+           <br>Гитхаб "stena" <a href="https://github.com/kontkont/stena"
+                               target="_blank">github.com/kontkont/stena </a> </p>
+
         <p>Гитхаб Тихона <a href="https://github.com/Syseka"
                               target="_blank">github.com/Syseka</a>
         <br> Сайт Тихона <a href="https://jodd5344.000webhostapp.com"
