@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-ini_set('session.gc.maxlifetime', +10);
+ini_set('session.gc.maxlifetime', +3600);
 
 if (!$_SESSION['login'] || !$_SESSION['password'])
 {
